@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+:root {
+  --bg-a: #f8f5ef;
+  --bg-b: #e5f8f2;
+  --card-bg: rgba(255, 255, 255, 0.78);
+  --ink: #1f2a33;
+  --muted: #68737d;
+  --line: rgba(13, 138, 114, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 15%, #f7c8a311 0%, transparent 35%),
+    radial-gradient(circle at 80% 0%, #91d6c622 0%, transparent 40%),
+    linear-gradient(140deg, var(--bg-a), var(--bg-b));
+  color: var(--ink);
+  font-family: "Space Grotesk", "IBM Plex Sans", sans-serif;
+}
+
+.shell {
+  max-width: 1200px;
+  margin: 36px auto;
+  padding: 0 16px;
+}
+
+.title-wrap {
+  margin-bottom: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.4px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.glass {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 30px rgba(16, 36, 30, 0.06);
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 80px auto;
+}
+
+@media (max-width: 768px) {
+  .shell {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
